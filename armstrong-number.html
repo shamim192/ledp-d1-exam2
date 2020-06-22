@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JS Armstrong Number</h1>
+
+    <script>
+        var num = 32;
+        var p = num;
+        var d = 0;
+        var r = 0;
+        var total = 0;
+
+
+        while (p != 0) {
+            d++;
+            p = Math.floor(p / 10);
+        }
+        p = num;
+
+     
+        while (p != 0) {
+            r = p % 10;
+            total += Math.pow(r, d);
+            p = Math.floor(p / 10);
+        }
+
+        if (num == total)
+            document.write(num + " is an armstrong number");
+        else
+            document.write(num + " is not an armstrong number");
+    </script>
+</body>
+
+</html>

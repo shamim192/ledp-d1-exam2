@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check Number is perfect or Not: </h1>
+    <script>
+        var number=prompt("Enter a integer Number:");
+        var temp=number;
+        var count=0;
+        for(var i=1; i<number; i++)
+        {
+        if(number%i==0)
+        {
+            count=count+i;
+        }
+        }
+        if(count==temp)
+        {
+            document.write(number +" is  a perfect Number");
+        }
+        else
+        {
+            document.write(number +" is not a perfect Number");
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check Number is prime or Not:</h1>
+    <label for="shamim">Enter the number: </label> 
+            <input type="text" name="shamim" value="" id="number"> 
+            <input type="button" value="Check" onClick="checkPrime()"> 
+            <br> 
+     <script>
+      function checkPrime()
+	{
+		var i,isPrime=0,number;
+		number = Number(document.getElementById("number").value);
+
+		for(i=2; i <= number/2; i++)
+		{
+			if(number%i == 0)
+			{
+				isPrime = 1;
+				break;
+			}
+		}
+		if(isPrime == 0)
+		{
+			document.write(number+" is Prime");
+		}
+		else
+		{
+			document.write(number+" is not Prime");
+		}
+	}
+    </script>
+</body>
+</html>
